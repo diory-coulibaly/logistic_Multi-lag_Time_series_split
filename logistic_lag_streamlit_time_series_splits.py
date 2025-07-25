@@ -22,7 +22,7 @@ st.image(image, caption="CSV Format:Stocks, SP500", use_container_width=True, ou
 with st.sidebar:
     st.header("1. Upload Files")
     goog_file = st.file_uploader("GOOG CSV (semicolon-separated)", type="csv")
-    sp500_file = st.file_uploader("S&P500 CSV (comma-separated)", type="csv")
+    sp500_file = st.file_uploader("S&P500 CSV (semicolon-separated)", type="csv")
 
     st.header("2. Model Options")
     lags = st.multiselect("Select lags (days)", [1, 2, 3, 5, 10], default=[1, 2, 5])
